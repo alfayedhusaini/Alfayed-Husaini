@@ -3,28 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar layout</title>
+    <title>web layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <style>
         .container{
-            background-color: antiquewhite;
-            width: 80%;
-            height: 100px;
-            margin: 0 auto;
+            width: 90%;margin: 0 auto;background-color: black;
         }
-        button{
-            margin: 10px 20px 30px 40px;
-            padding: 10px 20px 30px 40px;
-            margin-top: 10px;
-            margin-right: 100px;
-            margin: 30px 50px;
-            border-radius: 8px;
-            border-style: dashed;
+        .logo{
+            width: 100%;background-color: #301B06;height: auto;
+        }
+        .navigation{
+            width: 100%;background-color: brown;height: auto;margin-top: 3px;
+        }
+        .header{
+            width: 100%;background-color: blue;height: auto;margin-top: 3px;
+        }
+        .sidebar{
+            width: 100%;background-color: wheat;height: auto;margin-top: 3px;margin-right: 3px;
+        }
+        .main{
+            width: 100%;background-color: #301b06;height: auto;margin-top: 3px;
+        }
+        .footer{
+            width: 100%;background-color: fuchsia;height: 20px;margin-top: 3px;
+        }
+        .konten{
+            display: flex;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #301B06;
+        }
+
+        ul li {
+            float: left;
+        }
+
+            ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #111111;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <button> belajar margin pading border</button>
+        <div class="logo" style="color: aliceblue;">
+            <img width="20%" src="https://img.freepik.com/premium-vector/chocolate-typography-logo-with-brown-gold-colors_1179905-1754.jpg?semt=ais_hybrid&w=740&q=80" alt=""><br>
+            LAUK YANG COCOK DENGAN NASI
+        </div>
+    <div class="navigation">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">strore</a></li>
+        </ul>
     </div>
+    <div class="header">
+        <img width="100%" src="https://awsimages.detik.net.id/community/media/visual/2019/08/01/541f41ae-0603-44fe-a191-18b2ffa13e40_43.jpeg?w=600&q=90" alt="">
+    </div>
+    <div class="konten">
+        <div class="sidebar">
+            <p style="background-color: #301B06;color: aliceblue;">pemesanan</p>
+            <p>ini berisi informasi terkait pemsanan</p> 
+            <button style="color: white; background-color: #301B06;">pesan</button>
+            <button class="btn btn-danger">pesan lagi</button>
+        </div>
+        <div class="main">
+            <p style="color: white;">nasi tambah ice cream</p>
+            <img height="50%" width="100%" src="https://image.idntimes.com/post/20211005/fromandroid-a85298eada5a21b2bb94821fada3411b.jpg" alt="">
+            <p style="color: white;">ini berisi keterangan mengenai nasi tambah ice cream</p>
+        </div>
+    </div>
+    <div class="footer">footer</div>
 </body>
 </html>
