@@ -1,0 +1,46 @@
+<?php
+    echo"bissmillah, bisa php 2 minggu <br>";
+/*$suhu=30;//variabel
+if ($suhu<30){
+    $hasil="cuaca dingin";
+}else{
+    $hasil="cuaca panas";
+}
+echo $hasil;*/
+
+$suhu=-200;
+if ($suhu<30 && $suhu<100) {
+    $hasil="cuaca panas";
+}elseif ($suhu<30 && $suhu>0){
+    $hasil="cuaca dingin";
+}else {
+    $hasil="cuaca extream";
+}
+    
+echo $hasil
+
+/*$suhu = 130;
+
+if ($suhu < 0 OR >100) {
+    $hasil = "cuaca ekstrim";
+} elseif ($suhu > 30) {
+    $hasil = "cuaca panas";
+} else {
+    $hasil = "cuaca dingin";
+}
+
+echo $hasil;*/
+
+/*$angka=3000;
+if ($angka<10) {
+    $jawaban="satuan";
+}elseif ($angka<1000){
+    $jawaban="ratusan";
+}elseif ($angka<100){
+    $jawaban="puluhan";    
+}else {
+    $jawaban($angka);
+}
+echo $jawaban*/
+?>
+
